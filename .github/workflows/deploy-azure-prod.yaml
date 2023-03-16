@@ -1,0 +1,15 @@
+name: CD Deploy to Azure production
+
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+jobs:
+  deploy:
+    name: "Deploy functions App"
+    uses: parloa/workflows/.github/workflows/cs-deployment-func.yaml@main
+    with:
+      AZURE_FUNCTIONAPP_NAME: 'parloa-github-cd'
+    secrets:
+      AZURE_FUNCTIONAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE_PRODUCTION }}

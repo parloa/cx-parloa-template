@@ -1,0 +1,14 @@
+name: CI Build and test
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  build-and-test:
+    name: "Running Jest, Prettier and Azure tests"
+    uses: parloa/workflows/.github/workflows/cs-test-lint.yaml@main

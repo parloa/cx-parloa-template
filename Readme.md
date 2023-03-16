@@ -1,6 +1,6 @@
-# Services for [name of Cusotmer]
+# Services for [name of Customer]
 
-Deployed at [clinent URL]
+Deployed at [customer URL]
 
 Main Branch Build & Test
 

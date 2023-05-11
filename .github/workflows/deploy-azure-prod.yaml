@@ -7,9 +7,10 @@ on:
 
 jobs:
   deploy:
-    name: "Deploy functions App"
+    name: "Deploy functions App to deployment slot"
     uses: parloa/workflows/.github/workflows/cs-deployment-func.yaml@main
     with:
       AZURE_FUNCTIONAPP_NAME: 'parloa-github-cd'
+      SLOT_NAME: 'deployment'
     secrets:
       AZURE_FUNCTIONAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE_PRODUCTION }}

@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "storage",
+      "databaseName": "%ANALYTICS_DATABASE%",
+      "collectionName": "%ANALYTICS_COLLECTION%",
+      "createIfNotExists": true,
+      "connectionStringSetting": "parloaservices-store_DOCUMENTDB",
+      "partitionKey": "/releaseId",
+      "direction": "out",
+      "type": "cosmosDB"
+    }
+  ],
+  "scriptFile": "../dist/Analytics/src/index.js"
+}

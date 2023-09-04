@@ -1,0 +1,231 @@
+[
+    {
+        "meta": {
+            "warnings": {
+                "occurrences": 0,
+                "affectedSteps": []
+            },
+            "errors": {
+                "occurrences": 0,
+                "affectedSteps": []
+            }
+        },
+        "responseTime": 23,
+        "platform": "phoneV2",
+        "intent": {
+            "initialState": {
+                "id": "a25aa2af-7b9c-4c48-a5b1-326795aca923",
+                "dialogName": "main",
+                "name": "Nachfrage weiteres Anliegen"
+            },
+            "explicitlyHandled": true,
+            "name": "Nein",
+            "nextState": {
+                "id": "STATE.base",
+                "dialogName": "main",
+                "name": "Routing"
+            },
+            "handled": "locally",
+            "handledByState": {
+                "id": "a25aa2af-7b9c-4c48-a5b1-326795aca923",
+                "dialogName": "main",
+                "name": "Nachfrage weiteres Anliegen"
+            }
+        },
+        "transactionId": "60ba45ba981733dfa6613bf8",
+        "variables": [
+            {
+                "id": "postalCode",
+                "name": "postalCode",
+                "value": ""
+            },
+            {
+                "id": "lastSentiment",
+                "name": "lastSentiment",
+                "value": ""
+            },
+            {
+                "id": "sentimentCounter",
+                "name": "sentimentCounter",
+                "value": ""
+            },
+            {
+                "id": "streetNumber",
+                "name": "streetNumber",
+                "value": ""
+            },
+            {
+                "id": "formattedAddress",
+                "name": "formattedAddress",
+                "value": ""
+            },
+            {
+                "id": "street",
+                "name": "street",
+                "value": ""
+            },
+            {
+                "id": "city",
+                "name": "city",
+                "value": ""
+            },
+            {
+                "id": "adresseInput",
+                "name": "adresseInput",
+                "value": ""
+            },
+            {
+                "id": "neueAdresse",
+                "name": "neueAdresse",
+                "value": ""
+            },
+            {
+                "id": "GeburtsTag",
+                "name": "GeburtsTag",
+                "value": "31"
+            },
+            {
+                "id": "GeburtsMonat",
+                "name": "GeburtsMonat",
+                "value": "08"
+            },
+            {
+                "id": "GeburtsJahr",
+                "name": "GeburtsJahr",
+                "value": "1992"
+            },
+            {
+                "id": "GeburtsDatum",
+                "name": "GeburtsDatum",
+                "value": "31.08.1992"
+            },
+            {
+                "id": "Intention",
+                "name": "Intention",
+                "value": "BeschwerdeZeitungVermisst"
+            },
+            {
+                "id": "Vertragstyp",
+                "name": "Vertragstyp",
+                "value": ""
+            },
+            {
+                "id": "Zusatzoption",
+                "name": "Zusatzoption",
+                "value": ""
+            },
+            {
+                "id": "Bereich",
+                "name": "Bereich",
+                "value": "Kundenservice"
+            },
+            {
+                "id": "speechToTextHints",
+                "name": "speechToTextHints",
+                "value": ""
+            },
+            {
+                "id": "AusgesprochenerName",
+                "name": "AusgesprochenerName",
+                "value": "Kosub"
+            },
+            {
+                "id": "Kundennummer",
+                "name": "Kundennummer",
+                "value": ""
+            },
+            {
+                "id": "Vertragsnummer",
+                "name": "Vertragsnummer",
+                "value": ""
+            },
+            {
+                "id": "localCounter",
+                "name": "localCounter",
+                "value": ""
+            },
+            {
+                "id": "ErwarteterNamene",
+                "name": "ErwarteterNamene",
+                "value": ""
+            },
+            {
+                "id": "restartListeningNummer",
+                "name": "restartListeningNummer",
+                "value": ""
+            },
+            {
+                "id": "BeschwerdeZeitraumStart",
+                "name": "BeschwerdeZeitraumStart",
+                "value": "3month"
+            },
+            {
+                "id": "BeschwerdeHauefigkeit",
+                "name": "BeschwerdeHauefigkeit",
+                "value": "Oft"
+            }
+        ],
+        "response": {
+            "continueListening": false,
+            "prompt": "<speak version=\"1.0\" xmlns:mstts=\"https://www.w3.org/2001/mstts\" xml:lang=\"de-DE\"><voice name=\"de-DE-KatjaNeural\">Alles klar, dann danke ich f\u00fcr das nette Gespr\u00e4ch und sage Tsch\u00fc\u00df, bis zum n\u00e4chsten Mal bei deinem Spiegel! <break strength=\"medium\" time=\"2012ms\" /></voice></speak>",
+            "callMeta": {
+                "callerId": "+4917678033586",
+                "callId": "a8f35368-3feb-123a-618c-d094667acbd8",
+                "instanceId": "60a68b0cb4678b14c6d1c67c"
+            },
+            "callControlMessages": [],
+            "endTalk": true,
+            "reprompt": ""
+        },
+        "requesterId": "+4917678033586",
+        "request": {
+            "callMeta": {
+                "callerId": "+4917678033586",
+                "callId": "a8f35368-3feb-123a-618c-d094667acbd8",
+                "instanceId": "60a68b0cb4678b14c6d1c67c"
+            },
+            "intentRanking": [
+                {
+                    "id": -4300620255518597600,
+                    "confidence": 0.999983549118042,
+                    "name": "Nein"
+                },
+                {
+                    "id": -997796091434561900,
+                    "confidence": 7.319988071685657e-06,
+                    "name": "HelpIntent"
+                },
+                {
+                    "id": 4711706624519692000,
+                    "confidence": 5.409211553342175e-06,
+                    "name": "OptionBuchung"
+                },
+                {
+                    "id": 7909684767106171000,
+                    "confidence": 3.957970875489991e-07,
+                    "name": "Tarifwechsel"
+                },
+                {
+                    "id": -3641698038744772600,
+                    "confidence": 2.0025899161169036e-08,
+                    "name": "Ja"
+                },
+                {
+                    "id": 4869120587039172000,
+                    "confidence": 1.3637103668528994e-09,
+                    "name": "askForAgent"
+                }
+            ],
+            "text": "Nein danke",
+            "slots": [],
+            "intent": {
+                "id": -4300620255518597600,
+                "confidence": 0.999983549118042,
+                "name": "Nein"
+            }
+        },
+        "releaseId": "60a68b0cb4678b14c6d1c67c",
+        "userContextId": "60a6cda164ea2442f87f0848",
+        "requestTimestamp": "2021-06-04T15:24:42.882Z"
+    }
+]

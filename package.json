@@ -7,13 +7,15 @@
     "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@azure/functions": "^3.0.0",
     "@types/jest": "^28.1.6",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.7",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "husky": "^8.0.0"
   }
 }
